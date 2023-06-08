@@ -1,42 +1,51 @@
-###~LOCAL~###
-#  Before using these commands, please make sure that you have uderstood the statuses of files.
-#  untracked	: the file exist in the working directory, but have not yet been added to the Git repository
-#  new file		: after 'git add' the file
-#  modified		: the file has been modified and not staged yet
-#  staged		: ready to be committed
-#  confilct		: If conflicts occur while merging branches
-#  unmodified	: the tracked file in woring directory is the same as the file in staging area
+# git克隆
+git clone git@github.com:996-PYG/QYN..git
 
-
+# 文件成为staged状态
 git add <filename>
+git add .
 
-# rename a tracked file
-git mv <filename> <new_filename> 
-
-git commit -m ''
-#  'just do one thing and do it well'
-#  <type>[optional]: <describtion>
-#  for example	git commit -m '<docs>[git_study]: add useful_commands.txt'
-
-
-git commit
-#  only type 'git commit' will open a nano terminal to help you complete your commit.
-#  '^' means Ctrl key, '-m' means Alt in nano
-
-#  when you want to remove some files in staging area, use 'git reset'
-#  the files you removed would become 'modified'
+# 文件回到modified状态
 git reset <filename>
 
-#  see the differences between current files and the files in staging area 
-git diff
+# 提交分支
+git commit -m '<commens>'
 
-#  history of commitments
-git log
-###~REMOTE~###
-git remote add <repository_name> https://github.com/996-PYG/QYN..git
+# 确定远程仓库，并起名为origin
+git remote add origin git@github.com:996-PYG/QYN..git
 
-git remote
-git remote rename <current_name> <new_name>
-
+# 推送分支到远程仓库
 git push <repository_name> <local_branch>
- 
+
+# 查看分支、文件、提交记录等
+git log
+git status
+git branch --list
+
+# 新建分支
+git branch <branch_name>
+
+# 切换到分支
+git checkout <branch_name>
+
+# 新建并切换到分支
+git checkout -b <branch_name>
+
+# 本地合并分支
+git merge <branch_name>
+
+# 拉取远程分支
+git fetch
+
+# 新建并切换到分支，分支内容为远程的<branch_name_online>
+git checkout -b <branch_name_local> origin/<branch_name_online>
+
+# 更新本地分支
+git pull
+
+# 贮藏
+git stash
+git stash apply
+
+# 撤回commit
+git reset head~<number> --soft
