@@ -57,6 +57,36 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define MCU_SYS_LED_Pin GPIO_PIN_9
+#define MCU_SYS_LED_GPIO_Port GPIOB
+#define SPI_BOOT_CTRL_Pin GPIO_PIN_1
+#define SPI_BOOT_CTRL_GPIO_Port GPIOA
+#define M_BOOT_CTRL_Pin GPIO_PIN_4
+#define M_BOOT_CTRL_GPIO_Port GPIOA
+#define MCU_STB_LED_Pin GPIO_PIN_6
+#define MCU_STB_LED_GPIO_Port GPIOA
+#define CPU_RST_INT_Pin GPIO_PIN_7
+#define CPU_RST_INT_GPIO_Port GPIOA
+#define PMIC_VDC_Pin GPIO_PIN_0
+#define PMIC_VDC_GPIO_Port GPIOB
+#define MCU_NMI_Pin GPIO_PIN_1
+#define MCU_NMI_GPIO_Port GPIOB
+#define RTC_INT_L_Pin GPIO_PIN_2
+#define RTC_INT_L_GPIO_Port GPIOB
+#define FORCE_RST_Pin GPIO_PIN_8
+#define FORCE_RST_GPIO_Port GPIOA
+#define FAN_PWM_Pin GPIO_PIN_9
+#define FAN_PWM_GPIO_Port GPIOA
+#define MCU_IR_IN_Pin GPIO_PIN_6
+#define MCU_IR_IN_GPIO_Port GPIOC
+#define PMIC_EXT_EN_IN_Pin GPIO_PIN_15
+#define PMIC_EXT_EN_IN_GPIO_Port GPIOA
+#define MCU_FUNC_Pin GPIO_PIN_3
+#define MCU_FUNC_GPIO_Port GPIOB
+#define MCU_PWR_KEY_Pin GPIO_PIN_4
+#define MCU_PWR_KEY_GPIO_Port GPIOB
+#define MCU_PWR_LED_Pin GPIO_PIN_5
+#define MCU_PWR_LED_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */

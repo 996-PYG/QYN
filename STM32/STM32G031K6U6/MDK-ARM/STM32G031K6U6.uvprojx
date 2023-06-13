@@ -336,7 +336,7 @@
               <MiscControls />
               <Define>USE_HAL_DRIVER,STM32G031xx</Define>
               <Undefine />
-              <IncludePath>../Core/Inc;  ../Drivers/STM32G0xx_HAL_Driver/Inc;  ../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy;  ../Drivers/CMSIS/Device/ST/STM32G0xx/Include;  ../Drivers/CMSIS/Include</IncludePath>
+              <IncludePath>../Core/Inc;         ../Drivers/STM32G0xx_HAL_Driver/Inc;         ../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy;         ../Drivers/CMSIS/Device/ST/STM32G0xx/Include;         ../Drivers/CMSIS/Include</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
